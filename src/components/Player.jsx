@@ -1,6 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom'
-import { TbPlayerSkipForward, TbPlayerSkipBack, TbPlayerPause, TbPlayerPlay } from "react-icons/tb";
+// import { TbPlayerSkipForward, TbPlayerSkipBack, TbPlayerPause, TbPlayerPlay } from "react-icons/tb";
+import { RxTrackNext } from "react-icons/rx";
+import { RxTrackPrevious } from "react-icons/rx";
+import { RxPlay } from "react-icons/rx";
+import { RxPause } from "react-icons/rx";
+
 import musicplayer from "../assets/songs/musicplayer.png";
 import songs from "../assets/songs/songs";
 import './player.css';
@@ -119,7 +124,7 @@ const Player = () => {
                     <div className="progress" style={{ width: `${progress}%` }}></div>
                 </div>
                 <div className="btns">
-                    <span><TbPlayerSkipBack onClick={prevTrack} /></span>
+                    <span onClick={prevTrack}><RxTrackPrevious /></span>
                     <span onClick={() => {
                         if (play_pause) {
                             pause();
@@ -127,9 +132,9 @@ const Player = () => {
                             play();
                         }
                     }}>
-                        {play_pause ? <TbPlayerPause /> : <TbPlayerPlay />}
+                        {play_pause ? <RxPause /> : <RxPlay />}
                     </span>
-                    <span onClick={nextTrack}><TbPlayerSkipForward /></span>
+                    <span onClick={nextTrack}><RxTrackNext /></span>
                 </div>
             </div>
         </div>
