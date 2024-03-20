@@ -1,0 +1,92 @@
+.player_container{
+    background-color: rgba(141, 196, 198, 0.836);
+    border-radius: 0px 0px 10px 10px;
+    width: 280px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 16px;
+}
+.image_container{
+    height: 100%;
+}
+.image_container > img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.all_musics{
+    width: 100%;
+    background-color: rgb(208, 208, 208);
+    border-radius: 10px 10px 0px 0px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.songs_list{
+    background-color: rgba(23, 16, 5, 0.9);
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    height: 275px;
+    overflow: scroll;
+}
+.songs_list li{
+    list-style: none;
+    width: 90%;
+    color: aliceblue;
+}
+.songs_list li:hover{
+    background-color: rgb(27, 23, 18);
+    box-shadow: 0 2px 4px rgba(211, 243, 2, 0.2);
+    cursor: pointer;
+}
+
+
+
+
+.music_menu{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music_menu span{
+    margin-left: 5px;
+}
+
+.progress_container{
+    width: 90%;
+    height: 9px;
+    border-radius: 5px;
+    background-color: darkgray;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+.progress{
+    background-color: rgb(82, 113, 140);
+    height: 9px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btns span{
+    padding: 5px;
+    cursor: pointer;
+}
